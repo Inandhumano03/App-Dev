@@ -1,0 +1,171 @@
+/* Define theme variables */
+:root {
+    /* Light Theme Variables */
+    --contact-us-bg-light: #ffffff;
+    --contact-us-text-light: #000000;
+    --contact-form-bg-light: transparent;
+    --contact-form-input-bg-light: transparent;
+    --contact-form-input-text-light: #000000;
+    --contact-button-bg-light: #007bff;
+    --contact-button-hover-light: #0056b3;
+  
+    /* Dark Theme Variables */
+    --contact-us-bg-dark: #121212;
+    --contact-us-text-dark: #ffffff;
+    --contact-form-bg-dark: transparent;
+    --contact-form-input-bg-dark: transparent;
+    --contact-form-input-text-dark: #ffffff;
+    --contact-button-bg-dark: #1a73e8;
+    --contact-button-hover-dark: #005bb5;
+  }
+  
+  /* Contact Us page styling */
+  .contact-us-container {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: var(--contact-us-bg-light); /* Default to light theme background color */
+    color: var(--contact-us-text-light); /* Default to light theme text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background: transparent;
+  }
+  
+  /* Apply dark theme when necessary */
+  .dark-theme .contact-us-container {
+    color: var(--contact-us-text-dark);
+    background-color: var(--contact-us-bg-dark);
+    background: transparent;
+  }
+  
+  /* Contact Form Styles */
+  .contact-form {
+    background: var(--contact-form-bg-light); /* Set form background to light theme */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Apply dark theme form background */
+  .dark-theme .contact-form {
+    background: var(--contact-form-bg-dark);
+  }
+  
+  /* Form Labels */
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--contact-us-text-light); /* Default to light theme text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  /* Apply dark theme label styles */
+  .dark-theme .contact-form label {
+    color: var(--contact-us-text-dark);
+  }
+  
+  /* Form Inputs */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: var(--contact-form-input-bg-light); /* Default to light theme input background */
+    color: var(--contact-form-input-text-light); /* Default to light theme input text color */
+    font-size: 0.875rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  /* Apply dark theme input styles */
+  .dark-theme .contact-form input,
+  .dark-theme .contact-form textarea {
+    background-color: var(--contact-form-input-bg-dark);
+    color: var(--contact-form-input-text-dark);
+    border: 1px solid #555;
+  }
+  
+  /* Placeholder Text */
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #aaa;
+    transition: color 0.3s ease; /* Add transition for placeholder color */
+  }
+  
+  /* Input Hover and Focus Effects */
+  .contact-form input:hover::placeholder,
+  .contact-form input:focus::placeholder,
+  .contact-form textarea:hover::placeholder,
+  .contact-form textarea:focus::placeholder {
+    color: #000; /* Change placeholder color on hover and focus */
+  }
+  
+  /* Apply dark theme placeholder text color */
+  .dark-theme .contact-form input::placeholder,
+  .dark-theme .contact-form textarea::placeholder {
+    color: var(--contact-form-input-text-dark);
+  }
+  
+  /* Dark Theme Input Hover and Focus Effects */
+  .dark-theme .contact-form input:hover::placeholder,
+  .dark-theme .contact-form input:focus::placeholder,
+  .dark-theme .contact-form textarea:hover::placeholder,
+  .dark-theme .contact-form textarea:focus::placeholder {
+    color: #fff; /* Change placeholder color on hover and focus for dark theme */
+  }
+  
+  /* Submit Button */
+  .contact-form button {
+    padding: 0.75rem;
+    background-color: var(--contact-button-bg-light); /* Default to light theme button background */
+    color: var(--contact-us-text-light); /* Default to light theme button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Apply dark theme button styles */
+  .dark-theme .contact-form button {
+    background-color: var(--contact-button-bg-dark);
+    color: var(--contact-us-text-dark);
+    
+  }
+  
+  /* Button Hover Effects */
+  .contact-form button:hover {
+    background-color: var(--contact-button-hover-light); /* Default to light theme button hover background */
+  }
+  
+  /* Apply dark theme button hover effects */
+  .dark-theme .contact-form button:hover {
+    background-color: var(--contact-button-hover-dark);
+  }
+  
+  /* Success Messages */
+  .success {
+    color: green;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding-right: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  

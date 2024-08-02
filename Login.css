@@ -1,0 +1,200 @@
+/* Define theme variables */
+:root {
+  /* Light Theme Variables */
+  --login-bg-light: #ffffff;
+  --login-text-light: #000000;
+  --login-form-bg-light: transparent; /* Updated to transparent */
+  --login-form-input-bg-light: transparent;
+  --login-form-input-text-light: #000000;
+  --login-button-bg-light: #007bff;
+  --login-button-hover-light: #0056b3;
+
+  /* Dark Theme Variables */
+  --login-bg-dark: #121212;
+  --login-text-dark: #ffffff;
+  --login-form-bg-dark: transparent; /* Updated to transparent */
+  --login-form-input-bg-dark: transparent;
+  --login-form-input-text-dark: #ffffff;
+  --login-button-bg-dark: #1a73e8;
+  --login-button-hover-dark: #005bb5;
+}
+
+/* Login page styling */
+.login-container {
+  padding: 2rem;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 8px;
+  background-color: var(--login-bg-light); /* Default to light theme background color */
+  color: var(--login-text-light); /* Default to light theme text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background: #f2e7e7; /* This can be removed if you're using the variable */
+  background: transparent;
+}
+
+/* Apply dark theme when necessary */
+.dark-theme .login-container {
+  color: var(--login-text-dark);
+  background-color: var(--login-bg-dark);
+  background: transparent;
+}
+
+/* Background Image Overlay (Optional) */
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--login-text-light); /* Default to light theme text color */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Apply dark theme h1 styles */
+.dark-theme h1 {
+  color: var(--login-text-dark);
+}
+
+/* Login Form Styles */
+.login-form {
+  background: transparent; /* Set form background to transparent */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply dark theme form background */
+.dark-theme .login-form {
+  background: transparent; /* Keep form background transparent for dark theme */
+}
+
+/* Form Labels */
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--login-text-light); /* Default to light theme text color */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Apply dark theme label styles */
+.dark-theme .login-form label {
+  color: var(--login-text-dark);
+}
+
+/* Form Inputs */
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: var(--login-form-input-bg-light); /* Default to light theme input background */
+  color: var(--login-form-input-text-light); /* Default to light theme input text color */
+  font-size: 0.875rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Apply dark theme input styles */
+.dark-theme .login-form input {
+  background-color: var(--login-form-input-bg-dark);
+  color: var(--login-form-input-text-dark);
+}
+
+/* Placeholder Text */
+.login-form input::placeholder {
+  color: #aaa;
+  transition: color 0.3s ease; /* Add transition for placeholder color */
+}
+
+/* Input Hover and Focus Effects */
+.login-form input:hover::placeholder,
+.login-form input:focus::placeholder {
+  color: #000; /* Change placeholder color on hover and focus */
+}
+
+/* Apply dark theme placeholder text color */
+.dark-theme .login-form input::placeholder {
+  color: var(--login-form-input-text-dark);
+}
+
+/* Dark Theme Input Hover and Focus Effects */
+.dark-theme .login-form input:hover::placeholder,
+.dark-theme .login-form input:focus::placeholder {
+  color: #fff; /* Change placeholder color on hover and focus for dark theme */
+}
+
+/* Submit Button */
+.login-form button {
+  padding: 0.75rem;
+  background-color: var(--login-button-bg-light); /* Default to light theme button background */
+  color: var(--login-text-light); /* Default to light theme button text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Apply dark theme button styles */
+.dark-theme .login-form button {
+  background-color: var(--login-button-bg-dark);
+  color: var(--login-text-dark);
+}
+
+/* Button Hover Effects */
+.login-form button:hover {
+  background-color: var(--login-button-hover-light); /* Default to light theme button hover background */
+}
+
+/* Apply dark theme button hover effects */
+.dark-theme .login-form button:hover {
+  background-color: var(--login-button-hover-dark);
+}
+
+/* Authentication Links */
+.auth-links {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.auth-links a {
+  color: var(--login-text-light); /* Default to light theme link color */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Apply dark theme link styles */
+.dark-theme .auth-links a {
+  color: var(--login-text-dark);
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

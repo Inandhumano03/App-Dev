@@ -1,0 +1,171 @@
+/* TaskManagerApp.css */
+.task-manager-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .dashboard-container, .time-manager-container {
+    width: 80%;
+    margin: 20px 0;
+  }
+  
+  .dashboard-container h1, .time-manager-container h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .main-content {
+    width: 75%;
+    padding: 10px;
+  }
+  
+  .status-filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .status-filters button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .task-form {
+    margin-bottom: 20px;
+  }
+  
+  .task-form h2 {
+    text-align: center;
+  }
+  
+  .task-form div {
+    margin-bottom: 10px;
+  }
+  
+  .task-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .task-form input, .task-form textarea, .task-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .task-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-form button:hover {
+    background-color: #4cae4c;
+  }
+  
+  .tasks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .task-card {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-card.incomplete {
+    border-left: 5px solid #d9534f;
+  }
+  
+  .task-card.inProgress {
+    border-left: 5px solid #f0ad4e;
+  }
+  
+  .task-card.completed {
+    border-left: 5px solid #5cb85c;
+  }
+  
+  .task-details h3 {
+    margin-top: 0;
+  }
+  
+  .task-status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .task-status p {
+    margin: 0;
+  }
+  
+  .task-status button {
+    padding: 5px 10px;
+    background-color: #5bc0de;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-status button:hover {
+    background-color: #31b0d5;
+  }
+  
+  .calendar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tasks-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tasks-container li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  

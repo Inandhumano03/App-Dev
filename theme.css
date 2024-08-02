@@ -1,0 +1,51 @@
+:root {
+    /* Light Theme Variables */
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --button-background-light: Bisque;
+    --button-hover-light: rgb(61, 132, 231);
+    
+    /* Dark Theme Variables */
+    --background-color-dark: #121212;
+    --text-color-dark: #d5b5b5;
+    --button-background-dark: #000000;
+    --button-hover-dark: #005bb5;
+  }
+  
+  /* Light Theme */
+  .light-theme {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+  }
+  
+  .light-theme button {
+    background-color: var(--button-background-light);
+  }
+  
+  .light-theme button:hover {
+    background-color: var(--button-hover-light);
+  }
+  
+  /* Dark Theme */
+  .dark-theme {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+  
+  .dark-theme button {
+    background-color: var(--button-background-dark);
+  }
+  
+  .dark-theme button:hover {
+    background-color: var(--button-hover-dark);
+  }
+  
+  /* General Styling */
+  body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button {
+    transition: background-color 0.3s;
+  }
+  

@@ -1,0 +1,75 @@
+:root {
+  /* Light Theme Variables */
+  --calendar-bg-light: #ffffff;
+  --calendar-text-light: #000000;
+  --calendar-header-bg-light: #f0f0f0;
+  --calendar-header-text-light: #000000;
+  --calendar-event-bg-light: #f5deb3; /* Bisque color */
+  --calendar-event-text-light: #000000; /* Dark text on bisque */
+  
+  /* Dark Theme Variables */
+  --calendar-bg-dark: #121212;
+  --calendar-text-dark: #ffffff;
+  --calendar-header-bg-dark: #1e1e1e;
+  --calendar-header-text-dark: #ffffff;
+  --calendar-event-bg-dark: #555555; /* Dark grey for dark theme */
+  --calendar-event-text-dark: #ffffff;
+}
+
+/* Calendar Styles */
+.calendar-container {
+  background-color: var(--calendar-bg-light);
+  color: var(--calendar-text-light);
+}
+
+.dark-theme .calendar-container {
+  background-color: var(--calendar-bg-dark);
+  color: var(--calendar-text-dark);
+}
+
+.rbc-toolbar {
+  background-color: var(--calendar-header-bg-light);
+  color: var(--calendar-header-text-light);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.dark-theme .rbc-toolbar {
+  background-color: var(--calendar-header-bg-dark);
+  color: var(--calendar-header-text-dark);
+}
+
+.rbc-toolbar button {
+  background-color: var(--calendar-header-bg-light);
+  color: var(--calendar-header-text-light);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-theme .rbc-toolbar button {
+  background-color: var(--calendar-header-bg-dark);
+  color: var(--calendar-header-text-dark);
+}
+
+.rbc-toolbar button:hover {
+  background-color: var(--calendar-header-bg-light);
+}
+
+.dark-theme .rbc-toolbar button:hover {
+  background-color: var(--calendar-header-bg-dark);
+}
+
+.rbc-event {
+  background-color: var(--calendar-event-bg-light);
+  color: var(--calendar-event-text-light);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.dark-theme .rbc-event {
+  background-color: var(--calendar-event-bg-dark);
+  color: var(--calendar-event-text-dark);
+}
