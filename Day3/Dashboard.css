@@ -1,0 +1,203 @@
+/* src/components/Dashboard.css */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: rgb(34, 22, 2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+.logout-button {
+  margin-top: auto;
+  background-color: var(--logout-button-bg-color);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: var(--main-content-bg-color);
+  background-color: antiquewhite;
+}
+
+.task-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-input input,
+.task-input select,
+.task-input textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+}
+
+.task-input button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  width: 100%;
+}
+
+.calendar-day-header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar-day {
+  padding: 10px;
+  border: 1px solid var(--calendar-border-color);
+  background-color: var(--calendar-bg-color);
+  position: relative;
+}
+
+.calendar-day-disabled {
+  background-color: var(--calendar-disabled-bg-color);
+}
+
+.calendar-day span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: bold;
+}
+
+.calendar-day ul {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.calendar-day li {
+  font-size: 12px;
+  background-color: var(--calendar-task-bg-color);
+  padding: 2px;
+  margin: 2px 0;
+}
+
+.reminders,
+.task-prioritization,
+.task-assignment,
+.task-progress-tracking {
+  padding: 20px;
+}
+
+.reminders h2,
+.task-prioritization h2,
+.task-assignment h2,
+.task-progress-tracking h2 {
+  margin-bottom: 20px;
+}
+
+.reminders ul,
+.task-prioritization ul,
+.task-assignment ul,
+.task-progress-tracking ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reminders li,
+.task-prioritization li,
+.task-assignment li,
+.task-progress-tracking li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--task-border-color);
+  background-color: var(--task-bg-color);
+}
+
+.task-list {
+  padding: 20px;
+}
+
+.task-list h2 {
+  margin-bottom: 20px;
+}
+
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  margin-bottom: 10px;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid var(--task-border-color);
+  background-color: var(--task-bg-color);
+}
+
+.task-details span {
+  display: block;
+}
+
+.task-actions button {
+  margin-left: 10px;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.task-actions button:hover {
+  background-color: var(--button-hover-bg-color);
+}

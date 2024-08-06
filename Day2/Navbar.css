@@ -1,0 +1,58 @@
+/* Add this CSS to style the Navbar */
+:root {
+  /* Light Theme Variables */
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  --button-background-light: #007bff;
+  --button-hover-light: #0056b3;
+  
+  /* Dark Theme Variables */
+  --background-color-dark: #121212;
+  --text-color-dark: #ffffff;
+  --button-background-dark: #1a73e8;
+  --button-hover-dark: #005bb5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    /* background: transparent; */
+  }
+  
+  .navbar-brand h1 {
+    color: rgb(255, 250, 250);
+    margin: 0;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-links a {
+    color: rgb(255, 250, 250);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* New styles for theme toggle button */
+.theme-toggle-button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.theme-toggle-button:hover {
+  text-decoration: underline;
+}

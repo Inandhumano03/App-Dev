@@ -1,0 +1,163 @@
+/* Home page styling */
+.home-container {
+    min-height:min-content;
+    padding: 2rem;
+    /* background-image: url("C:\Users\mnand\Downloads\flat-hand-drawn-time-management-illustration (1)\4967385.jpg"); Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    margin-bottom: 2rem;
+    text-decoration: solid;
+    text-decoration-color: bisque;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .grid-item {
+    background: rgba(248, 235, 235, 0.7); /* Semi-transparent background */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+    cursor: pointer; /* Make cursor pointer to indicate it's clickable */
+
+  }
+  
+  .grid-item h2 {
+    margin-top: 0;
+    color: black;
+  }
+  
+  .grid-item ul {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(0, 0, 0);
+  }
+  
+  .grid-item ul li {
+    margin: 0.5rem 0;
+    background-color: darkgray;
+    
+  }
+  
+  .grid-item:hover {
+    transform: translateY(-10px); /* Move up slightly */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Add a deeper shadow */
+  }
+  .login-button-container {
+    text-align: center; /* Center the button within the container */
+  }
+  
+  .login-button-container button {
+    position: relative; /* Enable absolute positioning for the arrow */
+    padding: 0.75rem 1.5rem;
+    background-color: #2575c0; /* Green background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer;
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+    padding-right: 3rem; /* Extra space for the arrow */
+  }
+  
+  .login-button-container button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1rem; /* Position the arrow within the button */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 1rem solid #ffffff; /* White arrow */
+    border-top: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent;
+    transition: border-left-color 0.3s; /* Smooth transition for arrow color */
+  }
+  
+  .login-button-container button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  .login-button-container button:hover::after {
+    border-left-color: #ffffff; /* White arrow on hover */
+  }
+  
+  .login-button-container button:active {
+    background-color: #456ffa; /* Even darker green on click */
+    transform: scale(1); /* Reset scale on click */
+  }
+  
+  .login-button-container button:active::after {
+    border-left-color: #ffffff; /* White arrow on click */
+  }
+  
+  /* Home.css */
+
+/* Existing styles... */
+
+/* Footer styles */
+/* Home.css */
+
+/* Existing styles... */
+
+/* Footer styles */
+/* Home.css */
+
+/* Existing styles... */
+/* Footer styles */
+.footer {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav {
+  margin-top: 0.5rem; /* Adjust margin as needed */
+}
+
+.footer-nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Apply dark theme for the footer */
+.dark-theme .footer {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.dark-theme .footer-nav a {
+  color: var(--text-dark);
+}
